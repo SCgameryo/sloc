@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sbanklogin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline styles specific to index.html if needed */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0bff8f;
+            color: #000;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Sbanklogin</h1>
+            <nav>
+                <ul>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#lottery">Lottery</a></li>
+                    <li><a href="#transfer">Transfer</a></li>
+                    <li><a href="#child-pay">Child Pay</a></li>
+                    <li><a href="#adult-pay">Adult Pay</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Dashboard Menu</h2>
+            <ul>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#lottery">Lottery</a></li>
+                <li><a href="#transfer">Transfer</a></li>
+                <li><a href="#child-pay">Child Pay</a></li>
+                <li><a href="#adult-pay">Adult Pay</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section id="games" class="dashboard-section">
+                <h2>Games</h2>
+                <div class="game-buttons">
+                    <a href="#" class="game-button">Game 1 (10 SCoins)</a>
+                    <a href="#" class="game-button">Game 2 (5 SCoins)</a>
+                    <a href="#" class="game-button">Game 3 (15 SCoins)</a>
+                </div>
+            </section>
+
+            <section id="lottery" class="dashboard-section">
+                <h2>Lottery</h2>
+                <p>Buy a ticket for 2 SCoins for a chance to win 50,000 SCoins!</p>
+                <button class="lottery-button">Buy Ticket</button>
+            </section>
+
+            <section id="transfer" class="dashboard-section">
+                <h2>Transfer SCoins</h2>
+                <form>
+                    <label for="recipient">Choose recipient:</label>
+                    <select id="recipient" name="recipient">
+                        <option value="user1">User 1</option>
+                        <option value="user2">User 2</option>
+                        <option value="user3">User 3</option>
+                    </select>
+                    <label for="amount">Amount (0 - 5000 SCoins):</label>
+                    <input type="number" id="amount" name="amount" min="0" max="5000" step="1">
+                    <button type="submit">Transfer</button>
+                </form>
+            </section>
+
+            <section id="child-pay" class="dashboard-section">
+                <h2>Child Pay</h2>
+                <p>If you're a child, you receive 5.00 SCoins per week.</p>
+            </section>
+
+            <section id="adult-pay" class="dashboard-section">
+                <h2>Adult Pay</h2>
+                <p>If you're an adult, you receive 5.00 SCoins per week.</p>
+            </section>
+
+            <section id="settings" class="dashboard-section">
+                <h2>Settings</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" value="JohnDoe" disabled>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="johndoe@example.com" disabled>
+                    <button type="submit">Update Profile</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sbanklogin. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
